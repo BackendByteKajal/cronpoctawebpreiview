@@ -5,6 +5,7 @@ function apiHandler(handler) {
   return async (req, res) => {
     const method = req.method.toLowerCase();
     // check handler supports HTTP method
+    //comment
     if (!handler[method]) {
       return res.status(405).end(`Method ${req.method} Not Allowed`);
     }
